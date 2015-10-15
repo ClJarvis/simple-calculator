@@ -9,12 +9,10 @@ namespace SimpleCalculator
 {
     public class ConsoleCalculator
     {
-        private int FirstInt { get; set; }
-        private int SecondInt { get; set; }
-        private Char[] delimiterChars = { '+', '-', '*', '/', '%' };
-        
-       
+       // while (Input = true) {run code if not exit}
 
+        private Char[] delimiterChars = { '+', '-', '*', '/', '%' };
+ 
         public string[] GetNumbers(string input)
         {
            
@@ -32,15 +30,16 @@ namespace SimpleCalculator
                 }
 
             }
-            throw new InvalidOperationException();
-            //throw new ArgumentException("Invalid Input you didnot include a matmatic symbol");
+             throw new InvalidOperationException();
+         
+          // throw new ArgumentException("Invalid Input you did not include a mathmatic symbol");
         }
         public int Calculate(string input)
         {
             //collecting and adding operans(the ints) and the Operators(char math operators to buils equation
             var operans = GetNumbers(input);
             var op = GetOperator(input);
-       
+            //use switch to call add and other corresponding methods 
             switch (op)
             {
                 case '+':
@@ -57,16 +56,25 @@ namespace SimpleCalculator
                     throw new ArgumentException("incorrect format");
                     
             }
-
-
-            //use switch to call add and other methods, rework methods
+           
         }
 
-       
+        /*  while (x++ <= 4) while uaers input is true
+                   {
+                       Console.WriteLine("x is {0}", x);
+                   }
+                  */
+
     }
 
 }
- 
-           ///bool parsed = Int32.TryParse(input, out result);
-           /// if (!parsed)
-            ///Console.WriteLine("Int32.TryParse could not parse '{0}' to an int.\n", input);
+
+
+//   int i = 0;
+
+// return i;
+//Console.WriteLine("[" + i++ + "]>");
+
+///bool parsed = Int32.TryParse(input, out result);
+/// if (!parsed)
+///Console.WriteLine("Int32.TryParse could not parse '{0}' to an int.\n", input);
