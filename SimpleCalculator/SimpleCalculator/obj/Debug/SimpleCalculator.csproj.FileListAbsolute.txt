@@ -3,3 +3,4 @@ C:\Users\chris\Documents\GitHub\simple-calculator\SimpleCalculator\SimpleCalcula
 C:\Users\chris\Documents\GitHub\simple-calculator\SimpleCalculator\SimpleCalculator\bin\Debug\SimpleCalculator.pdb
 C:\Users\chris\Documents\GitHub\simple-calculator\SimpleCalculator\SimpleCalculator\obj\Debug\SimpleCalculator.exe
 C:\Users\chris\Documents\GitHub\simple-calculator\SimpleCalculator\SimpleCalculator\obj\Debug\SimpleCalculator.pdb
+C:\Users\chris\Documents\GitHub\simple-calculator\SimpleCalculator\SimpleCalculator\obj\Debug\SimpleCalculator.csprojResolveAssemblyReference.cache

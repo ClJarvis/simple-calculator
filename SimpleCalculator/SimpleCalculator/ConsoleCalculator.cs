@@ -9,8 +9,6 @@ namespace SimpleCalculator
 {
     public class ConsoleCalculator
     {
-       // while (Input = true) {run code if not exit}
-
         private Char[] delimiterChars = { '+', '-', '*', '/', '%' };
  
         public string[] GetNumbers(string input)
