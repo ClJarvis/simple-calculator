@@ -25,5 +25,22 @@ namespace AddintionTest
             var expected = '-';
             Assert.AreEqual(expected, op);
         }
+
+        [TestMethod]
+        public void IsNumberInIndexZero()
+        {
+            ConsoleCalculator parse = new ConsoleCalculator();
+
+            string[] indexZero = parse.GetNumbers("5+8");
+            Assert.AreEqual("5", indexZero[0]);
+        }
+
+        [TestMethod]
+        public void IsNumberInIndexOne()
+        {
+            ConsoleCalculator parse = new ConsoleCalculator();
+            string[] indexOne = parse.GetNumbers("5+8");
+            Assert.AreEqual("8", indexOne[1]);
+        }
     }
 }
