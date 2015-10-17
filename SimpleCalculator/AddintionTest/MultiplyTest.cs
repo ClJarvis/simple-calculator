@@ -11,9 +11,7 @@ namespace CalculatorTest
         [TestMethod]
         public void MultiplicationTest()
         {
-
-            Multiply MyProduct = new Multiply();
-            int answer = MyProduct.MultiplyNum(5, 3);
+            int answer = Multiply.MultiplyNum(new string[] { "5", "3" });
             Assert.AreEqual(answer, 15);
         }
     }

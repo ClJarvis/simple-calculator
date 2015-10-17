@@ -9,10 +9,8 @@ namespace CalculatorTest
         [TestMethod]
         public void AddintionTest()
         {
-     
-            addition MySum = new addition();
-            int answer = MySum.AddNum(1, 1);
-            Assert.AreEqual(answer, 2);
+            int answer = addition.AddNum(new string[] { "5", "3" });
+            Assert.AreEqual(answer, 8);
         }
     }
 }

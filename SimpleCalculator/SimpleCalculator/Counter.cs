@@ -8,7 +8,7 @@ namespace SimpleCalculator
 {
     public class Counter
     {
-        public static int IncreaseCounter(int n)
+       /* public static int IncreaseCounter(int n)
         {
                 int x = 0;
                 for (int i = 0; i <= x; i++)
@@ -17,7 +17,7 @@ namespace SimpleCalculator
                 throw new NotImplementedException();
             }
          
-        }
+        } */
 
     }
 }

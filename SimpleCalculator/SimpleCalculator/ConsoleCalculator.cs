@@ -57,11 +57,6 @@ namespace SimpleCalculator
            
         }
 
-        /*  while (x++ <= 4) while uaers input is true
-                   {
-                       Console.WriteLine("x is {0}", x);
-                   }
-                  */
 
     }
 

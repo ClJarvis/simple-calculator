@@ -13,23 +13,31 @@ namespace SimpleCalculator
         {
             ///user enters equation in 1+2 format
             int n = 0;
-            while (n < 4) ///change condintion to while(continue equals false)
+            int x = 0;
+            bool run = true;
+            while (run == true ) ///change condintion to while(continue equals false)
+              
             {
                 ///currently runs progran twice 1st input has = second just has [0] propmt  
-               ///  output exmaple at bottom of page.    
-               ///       
-               //counter increases [n] 
-                Console.WriteLine("[" + Counter.IncreaseCounter(n) + "]>");
-              
+                ///  output exmaple at bottom of page.    
+                ///       
+                //counter increases [n] 
+
+                Console.WriteLine("[" + x + "]>");
+                
                 string input = Console.ReadLine();
                 var calculator = new ConsoleCalculator();
                 var result = calculator.Calculate(input);
-
+                while (input == "quit" )
+                {
+                    run = false;
+                }      
                 Console.WriteLine("   = " + result);
-                Console.WriteLine("Press any key to exit.");
-                Console.ReadLine();
-                n++;
-            } //END OF While state
+                x++;
+                //Console.WriteLine("Press any key to exit."); 
+                Console.ReadLine(); //ReadKey();
+                
+            } //END OF While statement
         }
         //Add a COUNTER() 
         //add loop to run program again While Loop?

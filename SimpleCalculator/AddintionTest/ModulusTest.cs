@@ -10,9 +10,7 @@ namespace AddintionTest
         [TestMethod]
         public void ModTest()
         {
-
-            Modulus.ModulusNum([]);
-           // int answer = ModulusNum(15, 3);
+            int answer = Modulus.ModulusNum(new string[] { "15", "3" });
             Assert.AreEqual(answer, 0);
         }
     }

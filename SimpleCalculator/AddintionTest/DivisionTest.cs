@@ -10,9 +10,7 @@ namespace AddintionTest
         [TestMethod]
         public void DivisonTest()
         {
-
-            Divison MyQuotient = new Divison();
-            int answer = MyQuotient.DivideNum(15, 3);
+            int answer = Divison.DivideNum(new string[] { "15", "3" });
             Assert.AreEqual(answer, 5);
         }
     }

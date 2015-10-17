@@ -11,9 +11,7 @@ namespace SubtractionTest
         [TestMethod]
         public static void SubtractNum()
         {
-            //pt.InvokeStatic
-            var MyDifference = new Subtraction.InvokeStatic.SubtractNum();
-            int answer = MyDifference.SubtractNum(5, 3);
+            int answer = Subtraction.SubtractNum(new string[] { "5", "3" });
             Assert.AreEqual(answer, 2);
         }
     }
