@@ -32,31 +32,55 @@ namespace SimpleCalculator
          
           // throw new ArgumentException("Invalid Input you did not include a mathmatic symbol");
         }
-        public int Calculate(string input)
+        public string Calculate(string input)
         {
-            //collecting and adding operans(the ints) and the Operators(char math operators to buils equation
-            var operans = GetNumbers(input);
-            var op = GetOperator(input);
-            //use switch to call add and other corresponding methods 
-            switch (op)
+            if (input == "lastq")
             {
-                case '+':
-                    return addition.AddNum(operans); 
-                case '-':
-                    return Subtraction.SubtractNum(operans); 
-                case '*':
-                    return Multiply.MultiplyNum(operans);
-                case '/':
-                    return Divison.DivideNum(operans);
-                case '%':
-                    return Modulus.ModulusNum(operans);
-                default:
-                    throw new ArgumentException("incorrect format");
-                    
+                Console.WriteLine(Stack.lastQuestion);
+                return Stack.lastQuestion;
+               
             }
-           
-        }
+            else if (input == "last")
+            {
+                Console.WriteLine(Stack.last);
+                return Stack.last;
+            }
+            else if (input == "exit")
+            {
+                Console.WriteLine(Stack.lastQuestion);
+                return Stack.exit;
+            }
+            {
+                //collecting and adding operans(the ints) and the Operators(char math operators to buils equation
+                var operans = GetNumbers(input);
+                var op = GetOperator(input);
+                var result = 0;
+                //use switch to call add and other corresponding methods 
+                switch (op)
+                {
+                    case '+':
+                        result  = addition.AddNum(operans);
+                        break;
+                    case '-':
+                        result = Subtraction.SubtractNum(operans);
+                        break;
+                    case '*':
+                        result = Multiply.MultiplyNum(operans);
+                        break;
+                    case '/':
+                        result = Divison.DivideNum(operans);
+                        break;
+                    case '%':
+                        result = Modulus.ModulusNum(operans);
+                        break;
+                    default:
+                        throw new ArgumentException("incorrect format");
 
+                }
+                return result.ToString();
+
+            }
+        }
 
     }
 
